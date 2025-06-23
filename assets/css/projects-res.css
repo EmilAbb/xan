@@ -9,6 +9,14 @@
     .project-card{
         width: 100%;
     }
+
+    .projects-detail-text h3{
+        font-size: 20px;
+    }
+
+     .projects-gallery-card {
+       flex: 0 0 100%; 
+    }
 }
 
 @media (max-width:430px){
