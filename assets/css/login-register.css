@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.login-register-screen {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.log-reg-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.log-regis {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form-input input {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    color: #4a4a4a;
+    font-size: 18px;
+    border: 1px solid #424242;
+    margin-bottom: 15px;
+}
+
+.lr-container {
+    width: calc((100% - 100px) / 2);
+    padding: 10px 40px;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #424242;
+    padding: 4px;
+    transition: all 0.5s;
+    background: transparent;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.submit-btn span {
+    background-color: #424242;
+    color: #fff;
+    font-size: 18px;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5s;
+    padding: 0 5px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.remember {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #4a4a4a;
+    background-repeat: no-repeat;
+    background-position: center;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.remember:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.form-x {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.form-x .form-input {
+    width: 100%;
+}
+
+.remember-container input {
+    margin-right: 10px;
+}
+
+.remember-container label {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.submit-btn:hover {
+    border-color: #000;
+}
+
+.submit-btn:hover .btn-span {
+    background-color: #000;
+}
+
+.forget-remember {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.forget-container a{
+    color: #4a4a4a;
+    font-size: 18px;
+}
+.forget-container a:hover{
+    color: #000;
+    transition: all 0.3s;
+}
+
+@media (max-width:900px) {
+    .lr-container {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
