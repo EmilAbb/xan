@@ -16,92 +16,95 @@
 </head>
 <body>
 
-   <div class="video-section">
-        <video autoplay loop muted playsinline tabindex="-1">
-            <source src="/assets/videos/first.mp4" type="video/mp4">
-        </video>
-        <header class="header">
-            <div class="header-up container">
-                <div class="header-logo">
-                    <a href="index.html"><img src="./assets/images/logo.png" alt=""></a>
-                </div>
+    <header class="header-second">
+        <div class="header-up container">
+            <div class="header-logo">
+                <a href="index.html"><img src="./assets/images/logo.png" alt=""></a>
             </div>
-            <div class="header-down">
-                <div class="container">
-                    <div class="menus">
-                        <ul class="menu">
-                            <li><a href="brand.html">Brendlər</a></li>
-                            <li><a href="#">Layihələr</a></li>
-                            <li><a href="partners.html">Əməkdaşlıq</a></li>
-                            <li><a href="#">Kataloq/3D</a></li>
-                            <li><a href="about.html">Haqqımızda</a></li>
-                            <li><a href="contact.html">Əlaqə</a></li>
-                            <li class="lang-select">
-                                <a href="#">EN</a>
-                                <ul class="lang-dropdown">
-                                    <li><a href="#">AZ</a></li>
-                                    <li><a href="#">RU</a></li>
-                                    <li><a href="#">EN</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="header-down">
+            <div class="container">
+                <div class="menus">
+                    <ul class="menu">
+                        <li><a href="brand.html">Brendlər</a></li>
+                        <li><a href="projects.html">Layihələr</a></li>
+                        <li><a href="partners.html">Əməkdaşlıq</a></li>
+                        <li><a href="catalog.html">Kataloq/3D</a></li>
+                        <li><a href="about.html">Haqqımızda</a></li>
+                        <li><a href="contact.html">Əlaqə</a></li>
+                        <li class="lang-select">
+                            <a href="#">EN</a>
+                            <ul class="lang-dropdown">
+                                <li><a href="#">AZ</a></li>
+                                <li><a href="#">RU</a></li>
+                                <li><a href="#">EN</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
-                    <div class="hamburger-container">
-                        <div class="hamburger-menu">
-                            <div class="hamburger-menu-icon" id="hamburgerMenu">
-                                <span class="line top"></span>
-                                <span class="line middle"></span>
-                                <span class="line bottom"></span>
+                <div class="hamburger-container">
+                    <div class="hamburger-menu">
+                        <div class="hamburger-menu-icon" id="hamburgerMenu">
+                            <span class="line top"></span>
+                            <span class="line middle"></span>
+                            <span class="line bottom"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-overlay" id="menuOverlay">
+                    <div class="menu-container" id="mainMenu">
+                        <div class="menu-header">
+                            <div class="back-button" id="backButton">
+                                <span class="back-icon">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </span>
+                                <span class="back-text">Back</span>
+                            </div>
+                        </div>
+                        <div class="menu-content">
+                            <div class="menu-item"><a href="brand.html">Brendlər</a></div>
+                            <div class="menu-item"><a href="projects.html">Layihələr</a></div>
+                            <div class="menu-item"><a href="partners.html">Əməkdaşlıq</a></div>
+                            <div class="menu-item"><a href="catalog.html">Kataloq/3D</a></div>
+                            <div class="menu-item"><a href="about.html">Haqqımızda</a></div>
+                            <div class="menu-item"><a href="contact.html">Əlaqə</a></div>
+                            <div class="menu-item language-item" id="languageMenuTrigger">
+                                <span>EN</span>
+                                <span class="language-icon"><i class="fa-solid fa-angle-right"></i></span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="menu-overlay" id="menuOverlay">
-                        <div class="menu-container" id="mainMenu">
-                            <div class="menu-header">
-                                <div class="back-button" id="backButton">
-                                    <span class="back-icon">
-                                        <i class="fa-solid fa-angle-left"></i>
-                                    </span>
-                                    <span class="back-text">Back</span>
-                                </div>
-                            </div>
-                            <div class="menu-content">
-                                <div class="menu-item"><a href="brand.html">Brendlər</a></div>
-                                <div class="menu-item"><a href="#">Layihələr</a></div>
-                                <div class="menu-item"><a href="partners.html">Əməkdaşlıq</a></div>
-                                <div class="menu-item"><a href="#">Kataloq/3D</a></div>
-                                <div class="menu-item"><a href="about.html">Haqqımızda</a></div>
-                                <div class="menu-item"><a href="contact.html">Əlaqə</a></div>
-                                <div class="menu-item language-item" id="languageMenuTrigger">
-                                    <span>EN</span>
-                                    <span class="language-icon"><i class="fa-solid fa-angle-right"></i></span>
-                                </div>
+                    <div class="menu-container language-menu" id="languageMenu">
+                        <div class="menu-header">
+                            <div class="back-button" id="backFromLanguage">
+                                <span class="back-icon">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </span>
+                                <span class="back-text">Back</span>
                             </div>
                         </div>
-
-                        <div class="menu-container language-menu" id="languageMenu">
-                            <div class="menu-header">
-                                <div class="back-button" id="backFromLanguage">
-                                    <span class="back-icon">
-                                        <i class="fa-solid fa-angle-left"></i>
-                                    </span>
-                                    <span class="back-text">Back</span>
-                                </div>
-                            </div>
-                            <div class="menu-content">
-                                <div class="menu-item">AZ</div>
-                                <div class="menu-item">RU</div>
-                                <div class="menu-item">EN</div>
-                            </div>
+                        <div class="menu-content">
+                            <div class="menu-item">AZ</div>
+                            <div class="menu-item">RU</div>
+                            <div class="menu-item">EN</div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="header-info container">
+            <div class="header-info-left">
+                <a href="index.html">HOME</a> <span>/</span> <p>PARTNERS</p>
+            </div>
+            <div class="header-info-right">
+                <h1>PARTNERS</h1>
+            </div>
+        </div>
+    </header>
 
-        </header>
-    </div>
 
     <div class="scroll-top">
             <p><i class="fa-solid fa-chevron-up"></i></p>

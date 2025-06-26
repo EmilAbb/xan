@@ -5,12 +5,12 @@
     list-style-type: none;
     text-decoration: none;
 }
-.catalog{
+.katalog{
     margin-top: 30px!important;
     margin-bottom: 30px!important;
 }
 .container{
-    max-width: 1250px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 .short-header{
@@ -18,6 +18,8 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .short-header p{
     color: #777788;
@@ -42,18 +44,18 @@
     padding-bottom: 2px;
 }
 
-.catalog-container{
+.katalog-container{
     display: flex;
     flex-wrap: wrap;
 }
-.catalog-box{
+.katalog-box{
     width: 25%;
     padding: 10px;
     margin: 0;
     position: relative;
 }
 
-.catalog-bottom{
+.katalog-bottom{
     position: relative;
     overflow: visible;
     height: 56px;
@@ -62,17 +64,17 @@
     align-items: center;
     justify-content: space-between;
 }
-.catalog-info{
+.katalog-info{
     padding: 0 5px 0 20px;
     height: 100%;
     display: flex;
     align-items: center;
     width: 63%;
 }
-.catalog-info h4{
+.katalog-info h4{
     color: #777788;
 }
-.catalog-download{
+.katalog-download{
     float: right;
     display: block;
     margin: 0;
@@ -83,11 +85,11 @@
     background: #EBECEC;
     height: 100%;
 }
-.catalog-download a{
+.katalog-download a{
     font-size: 25px;
 }
 
-.catalog-hover {
+.katalog-hover {
     position: relative;
     display: inline-block;
     width: 100%;
@@ -114,11 +116,11 @@
     z-index: 1;
 }
 
-.catalog-hover:hover .image-one {
+.katalog-hover:hover .image-one {
     opacity: 0;
 }
 
-.catalog-hover:hover .image-two {
+.katalog-hover:hover .image-two {
     opacity: 1;
 }
 
@@ -129,7 +131,16 @@
     .image-two{
         object-fit: contain;
     }
-    .catalog-box{
+    .katalog-box{
         width: 100%;
     }
+
+    .short-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+    }
+
 }
