@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,22 +6,25 @@
     text-decoration: none;
 }
 
-.container{
+.container {
     max-width: 1250px;
     margin: 0 auto;
 }
 
-.all-brands{
+.all-brands {
     padding: 30px 0;
 }
-.brand-text{
+
+.brand-text {
     text-align: center;
     margin-bottom: 30px;
 }
-.brand-text h1{
+
+.brand-text h1 {
     line-height: 1.2;
 }
-.brand-box{
+
+.brand-box {
     background-color: #dddbdb;
     width: 250px;
     height: 200px;
@@ -30,11 +33,11 @@
     border-radius: 12px;
 }
 
-.brand-box a .brand-img{
+.brand-box a .brand-img {
     max-width: 100%;
     max-height: 100%;
-    width: 95%!important;
-    height: 95%!important;
+    width: 95% !important;
+    height: 95% !important;
     position: absolute;
     margin: 0 auto;
     object-fit: contain;
@@ -43,12 +46,13 @@
     left: 0;
     transition: 0.5s;
 }
-.brand-box:hover .brand-img{
+
+.brand-box:hover .brand-img {
     transition: 0.5s;
     transform: scale(.8);
 }
 
-.brand-boxs{
+.brand-boxs {
     display: flex;
     width: auto;
     justify-content: center;
@@ -57,7 +61,90 @@
 }
 
 @media (max-width:1000px) {
-    .brand-text h1{
+    .brand-text h1 {
         font-size: 22px;
+    }
+}
+
+
+.brand-inner-page {
+    height: auto;
+    padding: 20px;
+}
+
+.brand-inner-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+}
+
+.brand-gallery-card {
+    width: 25%;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative;
+}
+
+.brand-gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease-in-out;
+}
+
+.brand-gallery-card:nth-child(4n + 1) img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.brand-gallery-card:nth-child(4n) img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.brand-gallery-card:hover img {
+    transform: scale(1.11);
+}
+
+.brand-inner-title {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.brand-inner-title h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+}
+
+.brand-inner-text {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.brand-inner-text p {
+    color: #555;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    line-height: 1.875;
+    font-weight: 400;
+    word-break: break-word;
+}
+
+@media (max-width:730px) {
+    .brand-gallery-card {
+        height: 200px;
+    }
+}
+
+@media (max-width:550px) {
+    .brand-gallery-card {
+        width: 25%;
+        height: 120px;
     }
 }
