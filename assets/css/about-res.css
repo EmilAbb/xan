@@ -1,0 +1,27 @@
+@media (max-width:1230px){
+    .philosophy-card{
+        width: 450px;
+        height: 376px;
+    }
+}
+
+@media (max-width:990px){
+      .philosophy-card{
+        width: 330px;
+        height: 276px;
+    }
+}
+
+@media (max-width:750px){
+      .philosophy-card{
+        width: 100%;
+        height: 427px;
+    }
+}
+
+@media (max-width:430px){
+      .philosophy-card{
+        width: 362px;
+        height: 303px;
+    }
+}

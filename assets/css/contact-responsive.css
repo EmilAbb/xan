@@ -1,0 +1,21 @@
+@media (max-width:970px){
+    .contact-inner{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-left{
+        width: 100%;
+    }
+    .contact-right{
+        width: 100%;
+    }
+}
+
+@media (max-width:440px){
+    .contact-right-title h2{
+        font-size: 30px;
+    }
+}

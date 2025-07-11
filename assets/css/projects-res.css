@@ -1,0 +1,29 @@
+@media (max-width:768px){
+    .project-cards{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .project-card{
+        width: 100%;
+    }
+
+    .projects-detail-text h3{
+        font-size: 20px;
+    }
+
+     .projects-gallery-card {
+       flex: 0 0 100%; 
+    }
+}
+
+@media (max-width:430px){
+    .projetct-name h3 a{
+        font-size: 18px;
+    }
+    .project-button a p{
+        font-size: 14px;
+    }
+}
