@@ -136,6 +136,7 @@
     word-break: break-word;
 }
 
+
 @media (max-width:730px) {
     .brand-gallery-card {
         height: 200px;

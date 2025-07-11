@@ -23,6 +23,17 @@
     }
 }
 
+@media (max-width:800px) {
+   .header-three .header-info-right{
+    width: 250px;
+    height: 150px;
+   }
+
+   .header-three  .header-info-left p{
+        font-size: 14px;
+   }
+}
+
 
 
 
@@ -121,4 +132,13 @@
     .catalog-title h2 {
         font-size: 40px;
     }
+
+      .header-three .header-info-right{
+    width: 150px;
+    height: 100px;
+   }
+
+   .header-three  .header-info-left p{
+        font-size: 12px;
+   }
 }
