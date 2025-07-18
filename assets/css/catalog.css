@@ -85,7 +85,7 @@
     background: #EBECEC;
     height: 100%;
 }
-.katalog-download a{
+.katalog-download label{
     font-size: 25px;
 }
 
@@ -143,4 +143,83 @@
         gap: 20px;
     }
 
+}
+
+
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  z-index: 999;
+}
+
+/* İçerik kutusu */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 40px 30px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* X ikonu (modal kapatma) */
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.modal-close:hover {
+  color: red;
+}
+
+/* Modal aktif durumu */
+#modal1:checked ~ .modal1,
+#modal2:checked ~ .modal2 {
+  display: block;
+}
+
+/* Checkboxları gizle */
+.modal-toggle {
+  display: none;
+}
+
+/* İndirme butonu */
+.modal-download {
+  display: inline-block;
+  margin: 20px 0;
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.modal-download:hover {
+  background-color: #0056b3;
+}
+
+/* Modal 2 açma butonu */
+.modal-next {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
 }

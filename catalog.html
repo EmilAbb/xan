@@ -7,6 +7,7 @@
     <title>Catalog</title>
     <link rel="stylesheet" href="./assets/css/catalog.css">
     <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/login-register.css">
     <link rel="stylesheet" href="./assets/css/index-responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -15,8 +16,8 @@
 
 <body>
 
-   <header class="header-second" style="background-image: url('./assets/images/katalogheader.webp');">
-      <div class="header-overlay"></div>
+    <header class="header-second" style="background-image: url('./assets/images/katalogheader.webp');">
+        <div class="header-overlay"></div>
         <div class="header-up container">
             <div class="header-logo">
                 <a href="index.html"><img src="./assets/images/IMG_8556-removebg-preview.png" alt=""></a>
@@ -96,15 +97,15 @@
             </div>
         </div>
         <div class="header-info container">
-         
+
             <div class="header-info-right">
                 <h1>KATALOQ</h1>
             </div>
         </div>
     </header>
-        <div class="scroll-top">
-            <p><i class="fa-solid fa-chevron-up"></i></p>
-            <p>TOP</p>
+    <div class="scroll-top">
+        <p><i class="fa-solid fa-chevron-up"></i></p>
+        <p>TOP</p>
     </div>
 
 
@@ -113,15 +114,11 @@
             <p>8923 3d models from 1026 brands and 1715 designers <br>
                 available for download in 3ds Max, Cinema 4D, SketchUp and other 3d file formats
             </p>
-            <!-- <div class="short-by">
-                <h4>Sort by:</h4>
-                <div class="short-buttons">
-                    <a href="#" class="short-btn active">DATE</a>
-                    <a href="#" class="short-btn">PRICE</a>
-                </div>
-            </div> -->
+
         </div>
         <div class="katalog-container">
+            <input type="checkbox" id="modal1" class="modal-toggle">
+            <input type="checkbox" id="modal2" class="modal-toggle">
             <div class="katalog-box">
                 <a href="" class="katalog-hover">
                     <img src="./assets/images/one.jpg" alt="" class="image-one">
@@ -132,7 +129,9 @@
                         <h4>Marouk MK51 Carp..</h4>
                     </div>
                     <div class="katalog-download">
-                        <a href=""><i class="fa-solid fa-arrow-down"></i></a>
+                        <label for="modal1" style="cursor: pointer;">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -146,7 +145,9 @@
                         <h4>Marouk MK51 Carp..</h4>
                     </div>
                     <div class="katalog-download">
-                        <a href=""><i class="fa-solid fa-arrow-down"></i></a>
+                        <label for="modal1" style="cursor: pointer;">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -160,7 +161,9 @@
                         <h4>Marouk MK51 Carp..</h4>
                     </div>
                     <div class="katalog-download">
-                        <a href=""><i class="fa-solid fa-arrow-down"></i></a>
+                        <label for="modal1" style="cursor: pointer;">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -174,7 +177,9 @@
                         <h4>Marouk MK51 Carp..</h4>
                     </div>
                     <div class="katalog-download">
-                        <a href=""><i class="fa-solid fa-arrow-down"></i></a>
+                        <label for="modal1" style="cursor: pointer;">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -188,7 +193,9 @@
                         <h4>Marouk MK51 Carp..</h4>
                     </div>
                     <div class="katalog-download">
-                        <a href=""><i class="fa-solid fa-arrow-down"></i></a>
+                        <label for="modal1" style="cursor: pointer;">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -202,7 +209,9 @@
                         <h4>Marouk MK51 Carp..</h4>
                     </div>
                     <div class="katalog-download">
-                        <a href=""><i class="fa-solid fa-arrow-down"></i></a>
+                        <label for="modal1" style="cursor: pointer;">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -216,7 +225,71 @@
                         <h4>Marouk MK51 Carp..</h4>
                     </div>
                     <div class="katalog-download">
-                        <a href=""><i class="fa-solid fa-arrow-down"></i></a>
+                        <label for="modal1" style="cursor: pointer;">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal modal1">
+                <div class="modal-content">
+                    <label for="modal1" class="modal-close">&times;</label>
+
+                    <!-- <p><strong>PDF Kataloğunu İndir:</strong></p>
+                    <a href="/pdfs/catalog.pdf" download class="modal-download">PDF İndir</a> -->
+
+                    <!-- Modal 2 açma butonu -->
+                    <div class="login-screen ">
+                        <h3 class="log-regis">Daxil ol</h3>
+                        <form action="" class="login-form form-x">
+                            <div class="form-input">
+                                <input type="email" name="email" placeholder="Email adresinizi daxil edin">
+                            </div>
+                            <div class="form-input">
+                                <input type="password" name="password" placeholder="Şifrənizi daxil edin">
+                            </div>
+                            <div class="forget-remember">
+                                <div class="remember-container">
+                                    <label for="remember">Məni xatırla
+                                        <input type="checkbox" class="remember" id="remember" name="remember_me">
+                                    </label>
+                                </div>
+                                <div class="forget-container">
+                                    <a href="/forget-password.html">Şifrəmi unutdum</a>
+                                </div>
+                            </div>
+                            <button class="submit-btn">
+                                <span class="btn-span">Giriş</span>
+                            </button>
+                        </form>
+                    </div>
+                    <label for="modal2" class="modal-next submit-btn"><span class="btn-span">Qeydiyyat</span></label>
+                </div>
+            </div>
+
+            <div class="modal modal2">
+                <div class="modal-content">
+                    <label for="modal2" class="modal-close">&times;</label>
+                    <div class="register-screen ">
+                        <h3 class="log-regis">QEYDIYYAT</h3>
+                        <form action="" class="register-form form-x">
+                            <div class="form-input">
+                                <input type="text" name="fullname" placeholder="Ad\Soyad">
+                            </div>
+                            <div class="form-input">
+                                <input type="email" name="email" placeholder="Email adresinizi daxil edin">
+                            </div>
+                            <div class="form-input">
+                                <input type="text" name="phone" placeholder="Telefon nömrəsi">
+                            </div>
+                            <div class="form-input">
+                                <input type="password" name="password" placeholder="Şifrənizi daxil edin">
+                            </div>
+                            <button class="submit-btn">
+                                <span class="btn-span">QEYDİYYAT</span>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -272,4 +345,3 @@
 </body>
 
 </html>
-
