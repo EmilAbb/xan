@@ -1,0 +1,24 @@
+@media(max-width:840px) {
+    .service {
+        width: 100%;
+        height: 498px;
+    }
+
+    .service .service-name h3 {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:430px) {
+    .service-main a .service-name h3 {
+        font-size: 44px;
+        line-height: 2.7rem;
+    }
+
+    .services-page-title h1 {
+        font-size: 2.4rem;
+        line-height: 3.8rem;
+        margin-bottom: 15px;
+    }
+}
